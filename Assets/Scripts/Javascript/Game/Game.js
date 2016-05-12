@@ -11,11 +11,8 @@ function Run(argument) {
 	Physics.CheckClick();
 	if(Input.MouseReload > 0) Input.MouseClick = false;
 
-<<<<<<< HEAD
-=======
 	if(Application.debugMode)
 		Debug.debugScene();
 
->>>>>>> 3ba4f156a33e21e761b0da14951ef55313512130
 	RequestAnimationFrame(Run);
 }

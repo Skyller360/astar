@@ -24,13 +24,7 @@ var Physics = {
 			|| box2.y + box2.h <= box1.y ) 
 		{
 			return false;
-<<<<<<< HEAD
 		}
-=======
-			// console.log('PAS TOUCHE');
-		}
-		// console.log('TOUCHE');
->>>>>>> 3ba4f156a33e21e761b0da14951ef55313512130
 		return true;
 
 	},
@@ -43,22 +37,13 @@ var Physics = {
 		return dist < circle1.radius + circle2.radius ;
 	},
 	CircleBoxCollision: function(circle, box) {
-<<<<<<< HEAD
-=======
-
->>>>>>> 3ba4f156a33e21e761b0da14951ef55313512130
 		var distX = Math.abs( circle.x - box.x - box.w / 2 );
 		var distY = Math.abs( circle.y - box.y - box.h / 2 );
 
 		if ( distX > (box.w/2 + circle.radius) ) {return false;}
 		if ( distY > (box.h/2 + circle.radius) ) {return false;}
-<<<<<<< HEAD
 		if (distX <= box.w/2) {return true;}
 		if (distY <= box.h/2) {return true;}
-=======
-		if (distX <= box.w/2) {console.log('TOUCHE'); return true; }
-		if (distY <= box.h/2) {console.log('TOUCHE');return true;}
->>>>>>> 3ba4f156a33e21e761b0da14951ef55313512130
 
 		var dx = distX - box.w/2;
 		var dy = distY - box.h/2;
@@ -96,17 +81,9 @@ var Physics = {
 		return false;
 	},
 	CheckCollision: function() {
-<<<<<<< HEAD
 		//console.log(arguments.length);
 		if (arguments.length == 2 ) {
 			//console.log( arguments[0] instanceof Vector );
-=======
-		// console.log(arguments.length);
-		if (arguments.length == 2 ) {
-			//console.log( arguments[0] instanceof Vector );
-			// console.log( arguments[1] instanceof Circle );
-
->>>>>>> 3ba4f156a33e21e761b0da14951ef55313512130
 			if (arguments[0] instanceof Vector ) {
 				if (arguments[1] instanceof Box) {
 					//console.log('PointBoxCollision');
@@ -117,11 +94,6 @@ var Physics = {
 				}
 			} else if (arguments[0] instanceof Box) {
 				if (arguments[1] instanceof Box) {
-<<<<<<< HEAD
-					//console.log('BoxBoxCollision');
-=======
-					// console.log('BoxBoxCollision');
->>>>>>> 3ba4f156a33e21e761b0da14951ef55313512130
 					return Physics.BoxBoxCollision(arguments[0],arguments[1])
 				} else if (arguments[1] instanceof Circle) {
 					//console.log('CircleBoxCollision');
@@ -132,11 +104,6 @@ var Physics = {
 				}
 			} else if (arguments[0] instanceof Circle) {
 				if (arguments[1] instanceof Box) {
-<<<<<<< HEAD
-					//console.log('CircleBoxCollision');
-=======
-					// console.log('CircleBoxCollision');
->>>>>>> 3ba4f156a33e21e761b0da14951ef55313512130
 					return Physics.CircleBoxCollision(arguments[0],arguments[1])
 				} else if (arguments[1] instanceof Circle) {
 					//console.log('CircleCircleCollision');

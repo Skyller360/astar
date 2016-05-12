@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 function Vector(x ,y) {
-=======
-function Vector(x ,y ) {
->>>>>>> 3ba4f156a33e21e761b0da14951ef55313512130
 	this.x = x ;
 	this.y = y ;
 
@@ -53,9 +49,5 @@ function Vector(x ,y ) {
 	this.fromAngle = function(angle){
 		return new Vector(this.length() + Math.cos(angle), this.length() + Math.sin(angle));
 	}
-<<<<<<< HEAD
-	
-=======
->>>>>>> 3ba4f156a33e21e761b0da14951ef55313512130
 }
 

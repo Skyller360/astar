@@ -79,23 +79,11 @@ var Debug = {
 		var scaledH = go.Transform.size.y * go.Transform.scale.y;
 		var posX = go.Transform.position.x - scaledW*go.Transform.pivot.x;
 		var posY = go.Transform.position.y - scaledH*go.Transform.pivot.y;
-<<<<<<< HEAD
 		
 		var colW = go.Physics.Collider.size.x * go.Transform.scale.x;
    		var colH = go.Physics.Collider.size.y * go.Transform.scale.y;
    		var colX = go.Physics.Collider.position.x - scaledW*go.Transform.pivot.x;
    		var colY = go.Physics.Collider.position.y - scaledH*go.Transform.pivot.y;
-=======
-
-		// if (go instanceof Circle) {
-			
-		// }
-		
-		var colW = go.Physics.Collider.w * go.Transform.scale.x;
-   		var colH = go.Physics.Collider.h * go.Transform.scale.y;
-   		var colX = go.Physics.Collider.x - scaledW*go.Transform.pivot.x;
-   		var colY = go.Physics.Collider.y - scaledH*go.Transform.pivot.y;
->>>>>>> 3ba4f156a33e21e761b0da14951ef55313512130
    		
 
 

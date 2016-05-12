@@ -133,31 +133,18 @@
 *	Add NameOfYourGameObject.Start() in your scene.
 */
 
-<<<<<<< HEAD
 function GameObject(x,y) {
 	this.name = "Model";
-=======
-function GameObject() {
-	this.name = "GameObject";
->>>>>>> 3ba4f156a33e21e761b0da14951ef55313512130
 	this.enabled = true;
 	this.started = false;
 	this.rendered = true;
 	
 	this.Transform = {};
-<<<<<<< HEAD
 	this.Transform.position = new Vector(x,y);
 	this.Transform.size = new Vector(100,100);
 	this.Transform.scale = new Vector(1,1);
 	this.Transform.pivot = new Vector(0.5,0.5);
 	this.Transform.angle = 0;
-=======
-	this.Transform.position = new Vector();
-	this.Transform.size = new Vector();
-	this.Transform.scale = new Vector(1,1);
-	this.Transform.pivot = new Vector(0,0);
-	this.Transform.angle =;
->>>>>>> 3ba4f156a33e21e761b0da14951ef55313512130
 
 	this.Physics = {};
 	this.Physics.enabled = true;
@@ -174,15 +161,10 @@ function GameObject() {
 		isVisible: true,
 		isSpriteSheet: false,
 		that: this.Transform,
-<<<<<<< HEAD
 		thot : this,
 
 		Material: {
 			Source: Images['boy'],
-=======
-		Material: {
-			Source: "",
->>>>>>> 3ba4f156a33e21e761b0da14951ef55313512130
 			SizeFrame: new Vector(),
 			CurrentFrame: new Vector(),
 		},
@@ -195,14 +177,9 @@ function GameObject() {
 		},
 		
 		Draw: function() {
-<<<<<<< HEAD
 			ctx.save();
 			ctx.translate(this.that.position.x,	this.that.position.y);
 			ctx.rotate(Math.DegreeToRadian(this.that.angle));
-
-=======
-			
->>>>>>> 3ba4f156a33e21e761b0da14951ef55313512130
 			if (this.isSpriteSheet) 
 			{
 				if (this.Animation.animated) {	
@@ -225,10 +202,7 @@ function GameObject() {
 
 				var scaledSizeX = this.that.size.x*this.that.scale.x;
 				var scaledSizeY = this.that.size.y*this.that.scale.y;
-<<<<<<< HEAD
-=======
-				//console.log(this);
->>>>>>> 3ba4f156a33e21e761b0da14951ef55313512130
+
 				ctx.drawImage(this.Material.Source,
 								this.Material.CurrentFrame.x,
 								this.Material.CurrentFrame.y,
@@ -244,7 +218,6 @@ function GameObject() {
 				var scaledSizeX = this.that.size.x*this.that.scale.x;
 				var scaledSizeY = this.that.size.y*this.that.scale.y;
 				ctx.drawImage(this.Material.Source,
-<<<<<<< HEAD
 								-this.that.pivot.x*scaledSizeX,
 								-this.that.pivot.y*scaledSizeY,
 								scaledSizeX,
@@ -254,15 +227,6 @@ function GameObject() {
 
 		}
 		
-=======
-								this.that.position.x-this.that.pivot.x*scaledSizeX,
-								this.that.position.y-this.that.pivot.y*scaledSizeY,
-								scaledSizeX,
-								scaledSizeY);
-			}
-		}			
-
->>>>>>> 3ba4f156a33e21e761b0da14951ef55313512130
 	};
 
 
@@ -272,11 +236,7 @@ function GameObject() {
 	this.Start = function() {
 		if (!this.started) {
 			// operation start
-<<<<<<< HEAD
 			this.Renderer.Draw();
-=======
-
->>>>>>> 3ba4f156a33e21e761b0da14951ef55313512130
 			this.started = true;
 			console.log('%c System:GameObject ' + this.name + " Started !", 'background:#222; color:#bada55');
 		}
@@ -284,12 +244,8 @@ function GameObject() {
 	};
 	this.Update = function() {
 		if ( this.enabled ) {
-<<<<<<< HEAD
 			this.Renderer.Draw();
 			// this.Transform.angle += 4;
-=======
-
->>>>>>> 3ba4f156a33e21e761b0da14951ef55313512130
 		}
 		this.GUI();	
 	};

@@ -81,17 +81,9 @@ function Loader() {
 		
 		if(Application.debugMode)
 		{
-<<<<<<< HEAD
 			Debug.debugScene();
 		}
 	}
 
 	this.Awake();
-=======
-			Debug.ShowStats();
-		}
-	}
-
-	this.Awake()
->>>>>>> 3ba4f156a33e21e761b0da14951ef55313512130
 }

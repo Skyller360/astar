@@ -41,7 +41,6 @@ function Particles(position, velocity, color){
 	this.position = position;
 	this.velocity = velocity;
 	this.color = color;
-<<<<<<< HEAD
 	this.acceleration = new Vector();
 }
 
@@ -50,19 +49,11 @@ Particles.prototype.update = function(){
 	 this.velocity.add(this.acceleration);
 	 this.position.add(this.velocity);
 	 this.submitToField()
-=======
-}
-
-Particles.prototype.update = function(){
-	 // console.log(this.velocity);
-	 this.position.add(this.velocity);
->>>>>>> 3ba4f156a33e21e761b0da14951ef55313512130
 };
 
 Particles.prototype.render = function(){
 	ctx.fillStyle = this.color;
 	ctx.fillRect(this.position.x, this.position.y, 1, 1);
-<<<<<<< HEAD
 }
 
 Particles.prototype.submitToField = function(){
@@ -84,6 +75,4 @@ Particles.prototype.submitToField = function(){
 	}
 
 	this.acceleration = Acceleration;
-=======
->>>>>>> 3ba4f156a33e21e761b0da14951ef55313512130
 }

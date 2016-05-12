@@ -1,12 +1,8 @@
 var Time = {
 	Time: 0,
 	DeltaTime: 0,
-<<<<<<< HEAD
 
 	TimeScale: 0,
-=======
-	TimeScale: 1,
->>>>>>> 3ba4f156a33e21e761b0da14951ef55313512130
 	FPS: 0,
 	TimeOfLastFrame: 0,
 	averageDelay: 0,
@@ -51,20 +47,10 @@ var Time = {
 	SetTimeValues: function() {
 		this.Time = Date.now();
 		this.DeltaTime = (this.Time - this.TimeOfLastFrame) / 1000;
-<<<<<<< HEAD
-=======
-		
->>>>>>> 3ba4f156a33e21e761b0da14951ef55313512130
 		this.averageDelay += ((this.Time - this.TimeOfLastFrame) - this.averageDelay) / 10;
 		this.FPS = (1000 / this.averageDelay ).toFixed(1);
 
 		this.TimeOfLastFrame = this.Time;
-<<<<<<< HEAD
-		
-
-
-=======
->>>>>>> 3ba4f156a33e21e761b0da14951ef55313512130
 	}
 }
 

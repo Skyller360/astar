@@ -2,7 +2,6 @@
 Math.DotProduct = function(v1n,v2n) {
 	return v1n.x * v2n.x + v1n.y * v2n.y;
 }
-<<<<<<< HEAD
 // Euclidian Distance between two dots
 Math.EuclidianDistance = function(p1,p2) {
 	return Math.sqrt( (p1.x - p2.x)*(p1.x - p2.x)+(p1.y - p2.y)*(p1.y - p2.y) );
@@ -19,12 +18,6 @@ Math.getDistanceManhattan = function(p1, p2){
 	return Math.abs(p1.x - p2.x) + Math.abs(p1.y - p2.y);
 }
 
-=======
-// Distance between two dots
-Math.Distance = function(p1,p2) {
-	return Math.sqrt( (p1.x - p2.x)*(p1.x - p2.x)+(p1.y - p2.y)*(p1.y - p2.y) );
-}
->>>>>>> 3ba4f156a33e21e761b0da14951ef55313512130
 // restrict number between min and max
 Math.Clamp = function(number,min,max) {
 	return Math.min(Math.max(number, min), max);

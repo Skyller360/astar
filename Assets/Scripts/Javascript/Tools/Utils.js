@@ -35,7 +35,6 @@ CanvasRenderingContext2D.prototype.RoundedBox = function(x,y,w,h,r)
     this.quadraticCurveTo(x, y, x + r, y);
     this.closePath();
     this.fill();
-<<<<<<< HEAD
 };
 
 function indexFromCoord(x, y, col){
@@ -47,6 +46,3 @@ function coordFromIndex(i, col){
     var y = (i - x) / col;
     return new Vector(x, y);
 }
-=======
-};
->>>>>>> 3ba4f156a33e21e761b0da14951ef55313512130

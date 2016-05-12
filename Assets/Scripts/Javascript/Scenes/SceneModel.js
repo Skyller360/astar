@@ -53,13 +53,9 @@ function Scene() {
 	this.Start = function() {
 		if (!this.started) {
 			Time.SetTimeWhenSceneBegin();
-<<<<<<< HEAD
 			var boy = new GameObject();
 			// operation start
 			this.GameObjects.push(boy);
-=======
-			// operation start
->>>>>>> 3ba4f156a33e21e761b0da14951ef55313512130
 			this.started = true;
 			console.log('%c System:Scene ' + this.name + " Started !", 'background:#222; color:#bada55');
 			Time.SetTimeWhenSceneLoaded();
@@ -69,12 +65,8 @@ function Scene() {
 	this.Update = function() {
 		if (!Application.GamePaused) {
 			for (var i = 0; i < this.GameObjects.length; i++) {
-<<<<<<< HEAD
 				this.GameObjects[i].Start();
 				
-=======
-				//this.GameObjects[i].Start();
->>>>>>> 3ba4f156a33e21e761b0da14951ef55313512130
 			}
 		}
 		this.GUI();
